@@ -1,0 +1,252 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Gerald.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Gerald.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Gerald"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Gerald 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2021",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_GERALD_DIALOG DIALOGEX 0, 0, 804, 533
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Gerald"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "离开",IDOK,651,512,50,14
+    CONTROL         129,map,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_SUNKEN | 
+                    WS_BORDER,7,7,243,519
+    PUSHBUTTON      "导入文件",IDC_BUTTON1,277,27,61,16
+    PUSHBUTTON      "导入用户",IDC_BUTTON2,362,25,57,18
+    PUSHBUTTON      "显示分布",IDC_BUTTON3,277,56,61,19
+    PUSHBUTTON      "生成随机点",IDC_BUTTON4,362,56,56,19
+    PUSHBUTTON      "模拟路径",IDC_BUTTON5,361,91,56,19
+    LTEXT           "用户昵称：",IDC_STATIC,583,28,44,17
+    COMBOBOX        UserBOX,643,29,74,17,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "起点：",IDC_STATIC,488,55,27,11
+    LTEXT           "终点：",IDC_STATIC,487,75,25,12
+    LTEXT           "距离：",IDC_STATIC,486,90,24,13
+    LTEXT           "",startingplace,527,51,235,15
+    LTEXT           "",destination,527,72,235,13
+    LTEXT           "",lennum,528,90,64,15
+    LTEXT           "站点昵称：",IDC_STATIC,303,203,56,12
+    COMBOBOX        Name_Box,365,203,353,16,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查找",IDC_BUTTON6,723,203,52,14
+    LTEXT           "站点总量：",IDC_STATIC,303,232,45,11
+    LTEXT           "站点状态：",IDC_STATIC,303,253,43,10
+    LTEXT           "站点ID：",IDC_STATIC,303,269,43,13
+    LTEXT           "",station_totalnum,367,231,61,13
+    LTEXT           "",Status,365,255,58,13
+    LTEXT           "",stationID,364,271,45,11
+    LTEXT           "站点位置：",IDC_STATIC,449,229,53,13
+    LTEXT           "单车总量：",IDC_STATIC,449,251,53,12
+    LTEXT           "可用单车数：",IDC_STATIC,446,273,53,15
+    LTEXT           "",Address,515,229,197,12
+    LTEXT           "",Total_Docks,515,251,62,11
+    LTEXT           "",InService,513,270,64,11
+    LTEXT           "站点定位：",IDC_STATIC,301,297,46,14
+    LTEXT           "",Location,362,298,264,11
+    LISTBOX         IDC_LIST1,262,332,302,109,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "功能加载",IDC_STATIC,260,7,206,169
+    GROUPBOX        "用户信息",IDC_STATIC,473,7,324,169
+    GROUPBOX        "站点信息",IDC_STATIC,263,189,534,127
+    LTEXT           "文本展示",IDC_STATIC,262,319,54,16
+    PUSHBUTTON      "使用教程",IDC_BUTTON7,281,94,60,17
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Gerald Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Gerald\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2021\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Gerald.EXE\0"
+            VALUE "ProductName", "Gerald 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_GERALD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 797
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 526
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "map.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "背景.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Gerald(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Gerald.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
